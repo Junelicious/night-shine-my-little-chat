@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Night Mode redesign
+// @name         NightShine skin for My Little Chat
 // @namespace    http://tampermonkey.net/
 // @version      0.1
 // @description  try to take over the world!
