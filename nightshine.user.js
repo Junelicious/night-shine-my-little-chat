@@ -45,7 +45,7 @@ addGlobalStyle('.addMenu { background: rgba(255,255,255, 0.08); padding: 5px 0px
 addGlobalStyle('.sendMessage { background: rgba(255,255,255, 0.1); min-width: 120px; }');
 
 // Панелька управления высотой
-addGlobalStyle('.resizer {background: rgba(255,255,255, 0.1); box-sizing: border-box;}');
+addGlobalStyle('.resizer {background: rgba(255,255,255, 0.1); box-sizing: border-box; border-radius: 0px 0px 10px 10px; }');
 
 // Код для удаления лишнего, пока не работает
 //var parentRC = document.getElementById("div.menuRightChat");
