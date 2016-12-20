@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         NightShine skin for My Little Chat
 // @namespace    http://tampermonkey.net/
-// @version      0.14
+// @version      0.15
 // @description  Изменяет вид ночного режима MyLittleChat.ru, автор не несет никакой ответственности за нанесенные повреждения вашей психике, компутеру, коту.. и другим предметам.
 // @author       June Aurelious
 // @match https://mylittlechat.ru/%D0%9A%D0%BE%D0%BC%D0%BD%D0%B0%D1%82%D0%B8
@@ -38,11 +38,13 @@ addGlobalStyle('.mCustomScrollbar.mCS_no_scrollbar { height: 33px }');
 
 //
 addGlobalStyle('.MessageContainer,.ChatDialog {background: rgba(00,00, 00, 0.45) !important; border-bottom: 0px; }');
-addGlobalStyle('.FavSmiles, .smiles { background: rgba(00,00, 00, 0.5) !important; border: 0px solid black !important; padding 0px 2px; }');
+addGlobalStyle('.FavSmiles { background: rgba(00,00, 00, 0.3) !important; padding 2px 0px; height: 65px; }');
+addGlobalStyle('.FavSmiles, .smiles { border: 0px solid black !important; border-bottom: 5px solid rgba(00,00,00,0.25) !important; border-top: 5px solid rgba(00,00,00,0.25) !important; }');
+addGlobalStyle('..smiles { background: rgba(255,255, 255, 0.1) !important; border: 0px solid black !important; }');
 addGlobalStyle('.ShowSmiles { background: rgba(255,255,255, 0.05); width: 90px; padding: 5px 0px 0px 0px; }');
 addGlobalStyle('.addMenu { background: rgba(255,255,255, 0.08); padding: 5px 0px 0px 0px; }');
 // addGlobalStyle('.MessageContainer >div {background: rgba(255,255,255, 0.1); }');
-addGlobalStyle('.sendMessage { background: rgba(255,255,255, 0.1); min-width: 120px; }');
+addGlobalStyle('.sendMessage { background: rgba(185,185,255, 0.075); min-width: 120px; }');
 
 // Панелька управления высотой
 addGlobalStyle('.resizer {background: rgba(255,255,255, 0.1); box-sizing: border-box; border-radius: 0px 0px 10px 10px; }');
@@ -51,7 +53,6 @@ addGlobalStyle('.resizer {background: rgba(255,255,255, 0.1); box-sizing: border
 //var parentRC = document.getElementById("div.menuRightChat");
 //var childBC = document.getElementById("div.backgroundChange");
 //parentRC.removeChild(childBC);
-
 
 // Text 2 clickable URL script
 // Author os0x 
