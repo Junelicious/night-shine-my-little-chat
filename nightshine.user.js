@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         NightShine skin for My Little Chat
 // @namespace    http://tampermonkey.net/
-// @version      0.1
-// @description  Изменяет вид ночного режима MyLittleChat.ru, автор не несет никакой ответственности за нанесенные повреждения вашей психике, компутеру, коту.. и другим предметам. 
+// @version      0.14
+// @description  Изменяет вид ночного режима MyLittleChat.ru, автор не несет никакой ответственности за нанесенные повреждения вашей психике, компутеру, коту.. и другим предметам.
 // @author       June Aurelious
 // @match https://mylittlechat.ru/%D0%9A%D0%BE%D0%BC%D0%BD%D0%B0%D1%82%D0%B8
 // @match https://mylittlechat.ru/Комнаты
@@ -23,15 +23,34 @@ addGlobalStyle('.page {border:(0px, 0px, 0px, 0px); width:70% !important; min-wi
 addGlobalStyle('* {border: 0px solid black !important; } ');
 addGlobalStyle('.nightModeRule { background-image:url("http://www.hiveworkshop.com/attachments/canterlot_evening___wallpaper_by_crappyunicorn-d3fxiqk-jpg.103311/") !important; }');
 //
-addGlobalStyle('.head { background: rgba(00,00, 00, 0.5); !important; border-bottom: 0px; }');
+addGlobalStyle('.head {background: rgba(00,00, 00, 0.5)!important; }');
+addGlobalStyle('.full {background: rgba(00,00, 00, 0.1)!important; }');
+addGlobalStyle('.head > div {max-width: 1200px; }');
 addGlobalStyle('.opis { weight: 100; background: rgba(20,20,20,0.7); color:white }'); 
+
 addGlobalStyle('.msgContent,.radio.Control {background:rgba(00,00,00,0.5) !important; border: 0px solid black !important; padding 0px 0px 3px 3px; } ');
-addGlobalStyle('.topContainer  { background: rgba(00,00, 00, 0.6) !important; border-bottom: 0px; }');
+addGlobalStyle('.menuRightChat {padding: 10px 0px 3px 0px; } ');
+addGlobalStyle('.userAvatar { margin: 5px; } ');
+addGlobalStyle('.topContainer  { height: 33px; background: rgba(00,00, 00, 0.6) !important; border-bottom: 0px;}');
+addGlobalStyle('.my .ava { border-radius: 16px 0px 16px 16px !important;} ');
+addGlobalStyle('.another .ava { border-radius: 0px 16px 16px 16px !important;} ');
+addGlobalStyle('.mCustomScrollbar.mCS_no_scrollbar { height: 33px }');
+
 //
 addGlobalStyle('.MessageContainer,.ChatDialog {background: rgba(00,00, 00, 0.45) !important; border-bottom: 0px; }');
 addGlobalStyle('.FavSmiles, .smiles { background: rgba(00,00, 00, 0.5) !important; border: 0px solid black !important; padding 0px 2px; }');
-//
-addGlobalStyle('.resizer {background: rgba(FF,FF,FF, 0.6); box-sizing: border-box;}');
+addGlobalStyle('.ShowSmiles { background: rgba(255,255,255, 0.05); width: 90px; padding: 5px 0px 0px 0px; }');
+addGlobalStyle('.addMenu { background: rgba(255,255,255, 0.08); padding: 5px 0px 0px 0px; }');
+// addGlobalStyle('.MessageContainer >div {background: rgba(255,255,255, 0.1); }');
+addGlobalStyle('.sendMessage { background: rgba(255,255,255, 0.1); min-width: 120px; }');
+
+// Панелька управления высотой
+addGlobalStyle('.resizer {background: rgba(255,255,255, 0.1); box-sizing: border-box;}');
+
+// Код для удаления лишнего, пока не работает
+//var parentRC = document.getElementById("div.menuRightChat");
+//var childBC = document.getElementById("div.backgroundChange");
+//parentRC.removeChild(childBC);
 
 
 // Text 2 clickable URL script
