@@ -1,12 +1,12 @@
-﻿// ==UserScript==
+// ==UserScript==
 // @name         NightShine skin for My Little Chat
 // @namespace    http://tampermonkey.net/
 // @version      0.153
-// @updateURL    https://openuserjs.org/meta/Junelicious/NightShine_skin_for_My_Little_Chat.meta.js
 // @description  Изменяет вид ночного режима MyLittleChat.ru, автор не несет никакой ответственности за нанесенные повреждения вашей психике, компутеру, коту.. и другим предметам.
-// @author       June Aurelious
+// @author       June Aurelius
 // @match https://mylittlechat.ru/Комнаты
 // @match https://mylittlechat.ru/*
+// @grant        none
 // ==/UserScript==
 
 function addGlobalStyle(css) {
